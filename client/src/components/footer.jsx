@@ -10,10 +10,10 @@ export function Footer(){
 
 
     return <div>
-   <div className="sm:h-40 lg:h-60 sm:h-60 bg-darkBlue text-white p-2 pl-4 mb-0">
+   <div className="h-90 lg:h-60 sm:h-90 bg-darkBlue text-white p-2 pl-4 mb-0">
       <div className='w-1/2 '>
         <img src={logo} alt="logo"  className='h-16 '/>
-       <p className='text-sm md:text-lg font-bold mb-'>Built by passion, Driven by your success</p>
+       <p className='text-sm md:text-lg font-bold mb-8'>Built by passion, Driven by your success</p>
         </div> 
         <div className="flex justify-center sm:justify-start">
             <h2 className="text-sm md:text-md font-bold">Contact</h2>
@@ -21,7 +21,7 @@ export function Footer(){
 
         <div className='pl-24 sm:pl-2 lg:flex flex-row md:flex flex-row md:jsustify-center  '>
                <div className='m-2  flex items-center justify-center lg:justify-between mr-4 mt-4 '>
-            <div className='flex w-40 md:w-auto mr-2 '>   
+            <div className='flex w-40 md:w-auto mr-2 items-center'>   
                 <PhoneIcon />
                 <div>
                     <p className='ml-2 text-sm sm:text-md'>+2510893283</p>
