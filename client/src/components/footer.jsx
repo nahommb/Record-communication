@@ -1,7 +1,64 @@
+import logo from '../assets/images/logo.png'
+import TelegramIcon from '@mui/icons-material/Telegram';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import { FaTiktok } from 'react-icons/fa';
 
 export function Footer(){
 
-    return <div>
 
+    return <div>
+   <div className="sm:h-40 lg:h-60 sm:h-60 bg-darkBlue text-white p-2 pl-4 mb-0">
+      <div className='w-1/2 '>
+        <img src={logo} alt="logo"  className='h-16 '/>
+       <p className='text-sm md:text-lg font-bold mb-'>Built by passion, Driven by your success</p>
+        </div> 
+        <div className="flex justify-center sm:justify-start">
+            <h2 className="text-sm md:text-md font-bold">Contact</h2>
+        </div>
+
+        <div className='pl-24 sm:pl-2 lg:flex flex-row md:flex flex-row md:jsustify-center  '>
+               <div className='m-2  flex items-center justify-center lg:justify-between mr-4 mt-4 '>
+            <div className='flex w-40 md:w-auto mr-2 '>   
+                <PhoneIcon />
+                <div>
+                    <p className='ml-2 text-sm sm:text-md'>+2510893283</p>
+                    <p className='ml-2 text-sm sm:text-md'>+2510893283</p>
+                </div>
+               
+            </div>
+            <div className='w-40 md:w-auto  flex '>
+                <LinkedInIcon/>
+                <p className='ml-2 text-sm sm:text-md'>Linkedin</p>
+            </div>
+       </div>  
+        <div className='m-2  flex items-center justify-center lg:justify-between mr-4 mt-4 '>
+            <div className='w-40 md:w-auto mr-2 flex '>
+                <FacebookIcon/>
+                <p className='ml-2 text-sm sm:text-md'>Facebook</p>
+            </div>
+            <div className='flex w-40 md:w-auto '>
+                <TelegramIcon/>
+                <p className='ml-2 text-sm sm:text-md'>Telegram</p>
+            </div>
+       </div>  
+       <div className='m-2  flex items-center justify-center lg:justify-between mr-4 mt-4'>
+            <div className='flex w-40 md:w-auto mr-2'>
+                <InstagramIcon/>
+                <p className='ml-2 text-sm sm:text-md'>Instagram</p>
+            </div>
+            <div className='flex w-40 md:w-auto items-center'>
+               <FaTiktok/>
+                <p className='ml-2 text-sm sm:text-md'>Tiktok</p>
+            </div>
+       </div>
+        </div>
+       
+       <div className='mt-4 h-1 bg-orange'/>
+       
     </div>
+    <div className='bg-white h-4'></div>
+</div>
 }

@@ -6,9 +6,9 @@ export function NavBar (){
   
   <img src={logo} alt="logo" className="h-36 sm:h-36 md:h-56 lg:h-96 w-auto" />
 
-  <div className="flex flex-col items-center justify-center  px-4 py-2">
-    <p className="text-sm mb-2 font-bold md:text-lg lg:text-4xl lg:mb-12 text-center">
-      Lorem ipsum dolor sit amet, consectetur adipisicing
+  <div className="flex flex-col items-center justify-center  py-2">
+    <p className="text-sm mb-2 font-bold md:text-lg lg:text-4xl lg:mb-12">
+     Built by passion, Driven by your success
     </p>
     <button className="lg:h-12 lg:w-52 lg:text-lg bg-white text-blueAccent px-3 py-1.5 rounded-xl text-sm font-bold hover:bg-white transition">
       Get Started
