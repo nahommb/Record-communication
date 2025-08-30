@@ -10,10 +10,10 @@ export function Footer(){
 
 
     return <div>
-   <div className="h-90 lg:h-60 sm:h-90 bg-darkBlue text-white p-2 pl-4 mb-0">
+   <div className="h-88 lg:h-60 sm:h-90 bg-darkBlue text-white p-2 pl-4 mb-0">
       <div className='w-1/2 '>
         <img src={logo} alt="logo"  className='h-16 '/>
-       <p className='text-sm md:text-lg font-bold mb-8'>Built by passion, Driven by your success</p>
+       <p className='text-sm md:text-lg font-bold mb-4 md:mb-8'>Built by passion, Driven by your success</p>
         </div> 
         <div className="flex justify-center sm:justify-start">
             <h2 className="text-sm md:text-md font-bold">Contact</h2>

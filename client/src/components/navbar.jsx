@@ -2,7 +2,7 @@ import logo from '../assets/images/logo.png';
 
 export function NavBar (){
 
-    return <div className="sm:h-56 lg:h-96 bg-gradient-to-r from-orange to-blueAccent flex items-center px-4 text-white">
+    return <div className="h-60 lg:h-96 bg-gradient-to-r from-orange to-blueAccent flex items-center px-4 text-white">
   
   <img src={logo} alt="logo" className="h-36 sm:h-36 md:h-56 lg:h-96 w-auto" />
 
