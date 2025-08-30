@@ -1,6 +1,8 @@
+import About from "./components/about";
 import BlogContainer from "./components/blog_container";
 import { Footer } from "./components/footer";
 import { NavBar } from "./components/navbar";
+import Services from "./components/services";
 
 
 export default function App() {
@@ -8,9 +10,8 @@ export default function App() {
     <div>
       <NavBar />
       <BlogContainer />
-      <div className="h-96">
-
-      </div>
+      <About />
+      <Services />
       <Footer/>
     </div>
   )
