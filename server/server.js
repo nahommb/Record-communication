@@ -6,7 +6,7 @@ import authRoutes from "./routes/authRoutes.js";
 import blogsRoutes from "./routes/blogsRouts.js";
 import getDB from "./helper/db.js";
 import initDB from "./models/initDb.js";
-
+import cors from "cors";
 dotenv.config();
 
 const app = express();
@@ -15,9 +15,15 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 
+app.use(cors({
+  origin: "http://localhost:5173",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 // Routes
-app.use("/auth", authRoutes);
-app.use("/blogs", blogsRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/blogs", blogsRoutes);
 
 const db = await getDB();
 db
