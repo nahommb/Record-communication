@@ -3,7 +3,9 @@ import dotenv from "dotenv";
 import express from "express";
 import generateToken from "./helper/generateToken.js";
 import authRoutes from "./routes/authRoutes.js";
+import blogsRoutes from "./routes/blogsRouts.js";
 import getDB from "./helper/db.js";
+import initDB from "./models/initDb.js";
 
 dotenv.config();
 
@@ -15,9 +17,12 @@ app.use(express.json());
 
 // Routes
 app.use("/auth", authRoutes);
+app.use("/blogs", blogsRoutes);
 
 const db = await getDB();
 db
+
+initDB();
 
 // Test route
 app.get("/", (req, res) => {
