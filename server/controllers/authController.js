@@ -1,31 +1,38 @@
 import bcrypt from "bcrypt";
 import getDB from "../helper/db.js";
+import generateToken from "../helper/generateToken.js";
 
-export  async function loginController(req,res) {
+export async function loginController(req, res) {
+  console.log(req.body);
 
-    const { email, password } = req.body;
-      const db = await getDB();
-    
-    try{
-     const [rows] = await db.execute("SELECT *FROM users WHERE email = ?",['nahomjr17@gmail.com'])
-     console.log(rows[0])
-     
-     const isMatch = await bcrypt.compare('nahomlee', rows[0].password);
-     
+  const { email, password } = req.body;
+  const db = await getDB();
 
-     if(isMatch){
-      res.send("Login successful");
+  try {
+    const [rows] = await db.execute("SELECT * FROM users WHERE email = ?", [email]);
 
-     }
-     else{
-      res.status(401).json({message:'Incorect Email or Password'})
-     }
+    if (rows.length === 0) {
+      return res.status(401).json({ message: "Incorrect Email or Password" });
     }
-    catch(err){
-     res.status(500)
+
+    const isMatch = await bcrypt.compare(password, rows[0].password);
+
+    if (isMatch) {
+      const token = generateToken({
+        id: rows[0].id,
+        email: rows[0].email,
+        role: rows[0].role,
+      });
+      return res.status(200).json({ message: "Login successful", token });
+    } else {
+      return res.status(401).json({ message: "Incorrect Email or Password" });
     }
-     
+  } catch (err) {
+    console.error(err);
+    return res.status(500).json({ message: "Server error" });
+  }
 }
+
 
 export async function registerController(req,res){
 

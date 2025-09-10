@@ -29,30 +29,43 @@ export function Footer(){
                 </div>
                
             </div>
-            <div className='w-40 md:w-auto  flex '>
+            <a href='https://www.linkedin.com/in/nahom-niyana-3b4b9821b/' target='_blank' rel="noreferrer">
+               <div className='w-40 md:w-auto  flex '>
                 <LinkedInIcon/>
                 <p className='ml-2 text-sm sm:text-md'>Linkedin</p>
-            </div>
+            </div>  
+            </a>
+           
        </div>  
         <div className='m-2  flex items-center justify-center lg:justify-between mr-4 mt-4 '>
-            <div className='w-40 md:w-auto mr-2 flex '>
+            <a href='https://www.facebook.com/nahom.jr.7' target='_blank' rel="noreferrer">
+                 <div className='w-40 md:w-auto mr-2 flex '>
                 <FacebookIcon/>
                 <p className='ml-2 text-sm sm:text-md'>Facebook</p>
-            </div>
-            <div className='flex w-40 md:w-auto '>
+            </div> 
+            </a>
+           <a href='https://t.me/niyana17' target='_blank' rel="noreferrer">
+             <div className='flex w-40 md:w-auto '>
                 <TelegramIcon/>
                 <p className='ml-2 text-sm sm:text-md'>Telegram</p>
             </div>
+          </a>
+           
        </div>  
        <div className='m-2  flex items-center justify-center lg:justify-between mr-4 mt-4'>
-            <div className='flex w-40 md:w-auto mr-2'>
+            <a >
+                <div className='flex w-40 md:w-auto mr-2'>
                 <InstagramIcon/>
                 <p className='ml-2 text-sm sm:text-md'>Instagram</p>
             </div>
-            <div className='flex w-40 md:w-auto items-center'>
+            </a>
+            <a href='https://www.tiktok.com/@niyana17' target='_blank' rel="noreferrer">
+                <div className='flex w-40 md:w-auto items-center'>
                <FaTiktok/>
                 <p className='ml-2 text-sm sm:text-md'>Tiktok</p>
             </div>
+            </a>
+            
        </div>
         </div>
        
