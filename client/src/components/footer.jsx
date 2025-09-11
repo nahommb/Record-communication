@@ -24,12 +24,12 @@ export function Footer(){
             <div className='flex w-40 md:w-auto mr-2 items-center'>   
                 <PhoneIcon />
                 <div>
-                    <p className='ml-2 text-sm sm:text-md'>+2510893283</p>
-                    <p className='ml-2 text-sm sm:text-md'>+2510893283</p>
+                    <p className='ml-2 text-sm sm:text-md'>+251952705655</p>
+                    <p className='ml-2 text-sm sm:text-md'>+251710375837</p>
                 </div>
                
             </div>
-            <a href='https://www.linkedin.com/in/nahom-niyana-3b4b9821b/' target='_blank' rel="noreferrer">
+            <a href='http://www.linkedin.com/in/kibrewossen-yohannes-70154b2b3' target='_blank' rel="noreferrer">
                <div className='w-40 md:w-auto  flex '>
                 <LinkedInIcon/>
                 <p className='ml-2 text-sm sm:text-md'>Linkedin</p>
@@ -38,13 +38,13 @@ export function Footer(){
            
        </div>  
         <div className='m-2  flex items-center justify-center lg:justify-between mr-4 mt-4 '>
-            <a href='https://www.facebook.com/nahom.jr.7' target='_blank' rel="noreferrer">
+            <a href='https://web.facebook.com/record.communication' target='_blank' rel="noreferrer">
                  <div className='w-40 md:w-auto mr-2 flex '>
                 <FacebookIcon/>
                 <p className='ml-2 text-sm sm:text-md'>Facebook</p>
             </div> 
             </a>
-           <a href='https://t.me/niyana17' target='_blank' rel="noreferrer">
+           <a href='https://t.me/Recordcommunicationn' target='_blank' rel="noreferrer">
              <div className='flex w-40 md:w-auto '>
                 <TelegramIcon/>
                 <p className='ml-2 text-sm sm:text-md'>Telegram</p>
@@ -53,13 +53,13 @@ export function Footer(){
            
        </div>  
        <div className='m-2  flex items-center justify-center lg:justify-between mr-4 mt-4'>
-            <a >
+            <a href='https://www.instagram.com/record.communication/' target='_blank' rel="noreferrer">
                 <div className='flex w-40 md:w-auto mr-2'>
                 <InstagramIcon/>
                 <p className='ml-2 text-sm sm:text-md'>Instagram</p>
             </div>
             </a>
-            <a href='https://www.tiktok.com/@niyana17' target='_blank' rel="noreferrer">
+            <a href='https://www.tiktok.com/@recordcommunication?is_from_webapp=1&sender_device=pc' target='_blank' rel="noreferrer">
                 <div className='flex w-40 md:w-auto items-center'>
                <FaTiktok/>
                 <p className='ml-2 text-sm sm:text-md'>Tiktok</p>

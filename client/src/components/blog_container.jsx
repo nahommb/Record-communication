@@ -31,10 +31,19 @@ useEffect(() => {
   
 
    return (
-  <div className=" h-32 md:h-44 bg-blueAccent absolute top-44 sm:top-40 md:top-48 lg:top-80 inset-x-5  md:inset-x-20 z-20 rounded-md">
-    <h1 className="text-orange text-xl font-bold p-2 sm:p-4">Blogs</h1>
-    <p className="text-white sm:text-xl text-sm pl-2 sm:pl-4">{data?data.content:'loading'}</p>
-  </div>
+ <div className="h-32 md:h-44 
+  absolute top-44 sm:top-40 md:top-48 lg:top-80 inset-x-5 md:inset-x-20 
+  z-20 rounded-2xl 
+  bg-white/20 backdrop-blur-md 
+  border border-white/30 
+  shadow-lg
+">
+  <h1 className="text-white text-xl font-bold p-2 sm:p-4">Daily Blog</h1>
+  <p className="text-gray-600 sm:text-xl text-sm pl-2 sm:pl-4">
+    {data ? data.content : ''}
+  </p>
+</div>
+
 );
 
 }
