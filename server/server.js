@@ -24,7 +24,7 @@ app.use(cors({
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogsRoutes);
-
+ 
 const db = await getDB();
 db
 

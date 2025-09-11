@@ -9,7 +9,7 @@ export default function Admin() {
 
     if(user){
          return (
-    <div >
+    <div className="">
       <AdminNavbar />
       <AdminBody />
     </div>

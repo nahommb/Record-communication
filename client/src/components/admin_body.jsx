@@ -1,21 +1,22 @@
 import { useState } from "react";
-import AdminSidebar from "./admin_sidebar";
+import Dashboard from "./dashboard";
+import Blogs from "./blogs";
 
 export default function AdminBody() {
 
     const [index,setIndex] = useState(0);
 
     const bodyParts = [
-        <p>0</p>,
-        <p>1</p>,
+        <Dashboard/>,
+        <Blogs/>,
         <p>2</p>,
         <p>3</p>
 
     ]
 
   return (
-    <div className="flex flex-row items-center justify-between min-h-screen bg-gray-100">
-         <div className="w-64 h-screen bg-white text-orange p-4 mt-4 pt-16 rounded-lg ">  
+    <div className="flex flex-row items-center justify-between min-h-screen bg-gray-100 ">
+         <div className="w-64 h-screen bg-white text-orange p-4 my-4 pt-16 rounded-lg shadow-lg shadow-gray-400">  
             <ul>
                 <li><button onClick={()=>setIndex(0)}  className="mb-4">Dashboard</button></li>
                 <li><button onClick={()=>setIndex(1)}  className="mb-4">Blogs</button></li>
@@ -25,7 +26,7 @@ export default function AdminBody() {
 
             </ul>
         </div>
-        <div className="bg-white mt-8 ml-4 m-4 rounded-lg w-full h-screen">
+        <div className="bg-white m-4 rounded-lg w-full p-8 h-screen shadow-lg shadow-gray-400 ">
             {bodyParts[index]}
         </div>
     </div>

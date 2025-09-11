@@ -7,12 +7,7 @@ export default async function getDB() {
   if (db) return db; // reuse existing connection
 
   try {
-    db = await createConnection({
-      host: "127.0.0.1",
-      user: "nahom",
-      password: "niyana",
-      database: "recordcommunicationdb",
-    });
+    db = await createConnection(process.env.MYSQL_URL);
     console.log("✅ Connected to MySQL!");
     return db;
   } catch (err) {
@@ -23,4 +18,4 @@ export default async function getDB() {
 
 
 
-
+ 
