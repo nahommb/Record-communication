@@ -15,7 +15,7 @@ useEffect(() => {
 
 
   const fetchBlogs = async () => {
-  const res = await fetch("http://localhost:5000/api/blogs/getblogs",{
+  const res = await fetch("https://record-communication.onrender.com/api/blogs/getblogs",{
     method:"GET",
     headers:{
       "Content-Type":"application/json"

@@ -11,7 +11,7 @@ export default function Blogs() {
   async function handlePost(e) {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5000/api/blogs/createblogs", {
+    const res = await fetch("https://record-communication.onrender.com/api/blogs/createblogs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, content }),

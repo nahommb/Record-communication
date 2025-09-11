@@ -40,7 +40,7 @@ export async function registerController(req,res){
       const db = await getDB();
 
       try{
-        const hashedPassword = await bcrypt.hash(password, 10);
+        const hashedPassword = await bcrypt.hash('nahomlee', 10);
 
         await db.execute("INSERT INTO users (email,password,role) VALUES (?,?,?)",
           [email, hashedPassword, role])
@@ -51,5 +51,5 @@ export async function registerController(req,res){
          console.log(err)
       }
    
-}
-  
+} 
+   
