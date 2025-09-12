@@ -18,7 +18,7 @@ export default function Services(){
         <div className="flex justify-center ">
             <h2 className="font-bold text-white sm:text-xl mb-4">Social Media Markating</h2>   
         </div>
-         <div className="flex justify-center "> 
+         <div className="flex justify-center mx-2"> 
             <p className="text-white">Helping your business grow and get noticed online.</p>
         </div>
        
@@ -42,7 +42,7 @@ export default function Services(){
             
         </div>
              <div className="flex justify-center "> 
-            <p className="text-white">Creating content that speaks to people and makes them remember your brand.</p>
+            <p className="text-white mx-2">Creating content that speaks to people and makes them remember your brand.</p>
         </div>
         <div className=" flex w-full sm:justify-around overflow-x-auto space-x-4 " style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
         <ServicesItems title={'Content Creation'} content={'From eye-catching designs to videos, we craft content that grabs attention and reflects your brand’s identity.'}>
@@ -63,7 +63,7 @@ export default function Services(){
             <h2 className="font-bold text-white sm:text-xl mb-4">Full Digital Support</h2>
         </div>
         <div className="flex justify-center "> 
-            <p className="text-white">All-in-one solutions for businesses that want it done right, from start to finish.</p>
+            <p className="text-white mx-2">All-in-one solutions for businesses that want it done right, from start to finish.</p>
         </div>
         <div className=" flex w-full sm:justify-around overflow-x-auto space-x-4" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
         <ServicesItems title={'Complete Social Media Marketing Service'} content={'We handle everything strategy, content, ads, and management so you can focus on running your business.'}>
