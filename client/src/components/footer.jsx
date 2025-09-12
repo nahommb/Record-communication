@@ -8,6 +8,7 @@ import { FaTiktok } from 'react-icons/fa';
 
 export function Footer(){
 
+   const year = new Date().getFullYear();
 
     return <div>
    <div className="h-88 lg:h-60 sm:h-90 bg-darkBlue text-white p-2 pl-4 mb-0">
@@ -70,8 +71,10 @@ export function Footer(){
         </div>
        
        <div className='mt-4 h-1 bg-orange'/>
-       
+      
     </div>
-    <div className='bg-white h-4'></div>
+    <div className='bg-white h-4'>
+        <p className='pl-4 text-sm text-darkBlue'>&copy; {year} Record Communication. All rights reserved.</p>
+    </div>
 </div>
 }

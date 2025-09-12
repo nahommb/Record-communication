@@ -8,11 +8,11 @@ export function NavBar (){
     // navigate('https://t.me/Recordcommunicationn');
   }
 
-    return <div className="h-60 lg:h-96 bg-gradient-to-r from-orange to-blueAccent flex items-center px-4 text-white">
+    return <div className="h-60 lg:h-96 bg-gradient-to-r from-orange to-blueAccent flex items-center px-4 text-white shadow-lg shadow-gray-400 ">
   
   <img src={logo} alt="logo" className="h-36 sm:h-36 md:h-56 lg:h-96 w-auto" />
 
-  <div className="flex flex-col items-center justify-center  py-2">
+  <div className="flex flex-col items-center justify-center py-2">
     <p className="text-sm mb-2 font-bold md:text-lg lg:text-4xl lg:mb-12">
      Built by passion, Driven by your success
     </p>
