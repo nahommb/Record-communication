@@ -12,7 +12,7 @@ import AutorenewIcon from "@mui/icons-material/Autorenew";
 
 export default function Services(){
 
-    return <div className="mt-10 mb-3 p-4 px-0 sm:bg-gradient-to-b from-orange to-blueAccent bg-orange items-center shadow-lg shadow-gray-400 m-4 rounded-lg">
+    return <div className="mt-10 mb-3 p-4 px-0 sm:bg-gradient-to-b from-orange to-blueAccent bg-orange items-center shadow-lg shadow-gray-400 m-1 sm:m-4 rounded-lg">
         <h2 className="text-white mb-4 ml-4 sm:mt-12 font-bold text-lg sm:text-3xl">Our Services</h2>
     <div className="">
         <div className="flex justify-center ">
