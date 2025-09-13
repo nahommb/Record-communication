@@ -16,13 +16,13 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://recordcommunication.netlify.app",
+  origin: ["https://recordcommunication.netlify.app",'http://localhost:5173'],
   methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  credentials: true 
 }));
 
 // Routes
-app.use("/api/auth", authRoutes);
+app.use("/api/auth", authRoutes);   
 app.use("/api/blogs", blogsRoutes);
  
 const db = await getDB();

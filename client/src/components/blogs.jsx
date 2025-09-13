@@ -8,26 +8,34 @@ export default function Blogs() {
   const [pop, setPop] = useState(false);
   const [popMessage,setPopMessage] = useState()
 
-  async function handlePost(e) {
-    e.preventDefault();
+async function handlePost(e) {
+  e.preventDefault();
+  console.log("clicked");
 
+  try {
     const res = await fetch("https://record-communication.onrender.com/api/blogs/createblogs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, content }),
     });
 
-    console.log(res.ok);
+    console.log("Status:", res.status);
 
     if (res.ok) {
       setPop(true);
-      setPopMessage('Successfuly Posted')
-      // Auto-close popup after 3s
+      setPopMessage("Successfully Posted");
       setTimeout(() => setPop(false), 2000);
     } else {
-      setPopMessage('Something Wrong Please Try Again')
+      const errText = await res.text();
+      console.error("Error response:", errText);
+      setPopMessage("Something Wrong Please Try Again");
     }
+  } catch (err) {
+    console.error("Fetch error:", err);
+    setPopMessage("Network error, please try again");
   }
+}
+
 
   return (
     <div>
