@@ -11,7 +11,7 @@ export function Footer(){
    const year = new Date().getFullYear();
 
     return <div>
-   <div className="h-88 lg:h-60 sm:h-90 bg-darkBlue text-white p-2 pl-4 mb-0">
+   <div className="h-88 lg:h-60 sm:h-90 bg-darkBlue text-white p-2 pl-4 ">
       <div className='w-1/2 '>
         <img src={logo} alt="logo"  className='h-16 '/>
        <p className='text-sm md:text-lg font-bold mb-4 md:mb-8'>Built by passion, Driven by your success</p>
@@ -20,7 +20,7 @@ export function Footer(){
             <h2 className="text-sm md:text-md font-bold">Contact</h2>
         </div>
 
-        <div className='pl-24 sm:pl-2 lg:flex flex-row md:flex flex-row md:jsustify-center  '>
+        <div className='pl-4 sm:pl-2 lg:flex flex-row md:flex flex-row  md:jsustify-cenetr '>
                <div className='m-2  flex items-center justify-center lg:justify-between mr-4 mt-4 '>
             <div className='flex w-40 md:w-auto mr-2 items-center'>   
                 <PhoneIcon />

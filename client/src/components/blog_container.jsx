@@ -37,9 +37,10 @@ useEffect(() => {
   bg-white/20 backdrop-blur-md 
   border border-white/30 
   shadow-lg
+  
 ">
   <h1 className="text-white text-xl font-bold p-2 sm:p-4">Daily Blog</h1>
-  <p className="text-gray-600 sm:text-xl text-sm pl-2 sm:pl-4 pb-2">
+  <p className="text-gray-600 sm:text-xl font-bold text-sm pl-2 sm:pl-4 pb-3">
     {data ? data.content : ''}
   </p>
 </div>
