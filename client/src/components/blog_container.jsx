@@ -31,7 +31,7 @@ useEffect(() => {
   
 
    return (
- <div className="h-32 md:h-44 
+ <div className="px-2
   absolute top-44 sm:top-40 md:top-48 lg:top-80 inset-x-5 md:inset-x-20 
   z-20 rounded-2xl 
   bg-white/20 backdrop-blur-md 
@@ -39,7 +39,7 @@ useEffect(() => {
   shadow-lg
 ">
   <h1 className="text-white text-xl font-bold p-2 sm:p-4">Daily Blog</h1>
-  <p className="text-gray-600 sm:text-xl text-sm pl-2 sm:pl-4">
+  <p className="text-gray-600 sm:text-xl text-sm pl-2 sm:pl-4 pb-2">
     {data ? data.content : ''}
   </p>
 </div>
