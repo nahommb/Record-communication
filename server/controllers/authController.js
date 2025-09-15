@@ -52,4 +52,25 @@ export async function registerController(req,res){
       }
    
 } 
+
+export async function changePasswordController(req,res){
+
+  const {email,oldPassword,newPassword} = req.body;
+  const db = await getDB();
+   
+
+  try{
+     const [rows] =  await db.execute("SELECT * FROM users WHERE email = ?", [email])
+     const isMatch = await bcrypt.compare(oldPassword, rows[0].password);
+     if(isMatch){
+      //change password
+      const hashedPassword = await bcrypt.hash(newPassword, 10);
+      await db.execute("UPDATE users SET password = ? WHERE email = ?",[hashedPassword,email])
+      res.status(200).json({message:'successfuly changed'}) 
+     }
+  }
+  catch(err){
+    res.status(500)
+  }
+}
    

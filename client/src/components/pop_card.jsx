@@ -12,13 +12,13 @@ export default function PopCard({title,message}){
       </div>
       <div>
         <p class="text-white font-bold text-lg">Alert</p>
-        <p class="text-white text-sm">{message} pook</p>
+        <p class="text-white text-sm">{message}</p>
       </div>
     </div>
     <button
       class="text-gray-600 text-gray-600 hover:bg-white/5 p-1 rounded-md transition-colors ease-linear"
     >
-      <svg
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -31,7 +31,7 @@ export default function PopCard({title,message}){
           stroke-linejoin="round"
           d="M6 18 18 6M6 6l12 12"
         ></path>
-      </svg>
+      </svg> */}
     </button>
   </div>
 </div>
