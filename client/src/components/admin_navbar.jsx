@@ -10,7 +10,7 @@ export default function AdminNavbar() {
         <h1 className="text-xxl font-bold">Dashboard</h1>
         <div className="flex items-center space-x-2">
             <p>{user.email}</p>
-          <button onClick={logout} className="bg-blueAccent px-2 py-1 text-white rounded hover:bg-blue-700">Logout</button>
+          <button onClick={logout} className="bg-orange px-2 py-0.5 text-white rounded-lg hover:bg-red-700">Logout</button>
         </div>
       </div>
     </div>

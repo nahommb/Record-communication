@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Dashboard from "./dashboard";
 import Blogs from "./blogs";
+import Setting from "./setting";
 
 export default function AdminBody() {
 
@@ -9,7 +10,7 @@ export default function AdminBody() {
     const bodyParts = [
         <Dashboard/>,
         <Blogs/>,
-        <p>2</p>,
+        <Setting/>,
         <p>3</p>
 
     ]
